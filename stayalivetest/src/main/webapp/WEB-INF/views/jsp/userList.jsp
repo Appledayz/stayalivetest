@@ -12,8 +12,6 @@
 		let time = <%=request.getAttribute("date")%>;
 		function printServerTime(){
 			let date = Date(time);
-			console.log(time);
-			console.log(date);
 			document.getElementById('sdate').innerHTML = date;
 			time++;
 		}
