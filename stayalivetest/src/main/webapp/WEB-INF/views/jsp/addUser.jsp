@@ -10,8 +10,10 @@
 	<script>
 		$(document).ready(()=>{
 			$('#addUserBtn').click(()=>{
-				if($('#id').val > 3 && $('#pw').val){
+				if($('#id').val().length > 3 && $('#pw').val().length > 3){
 					$('#addUserForm').submit();				
+				}else{
+					alert('아디디와 비밀번호는 4자 이상 입력하세요!');
 				}
 			});
 		});
@@ -21,12 +23,18 @@
 <body>
 	<h1>addUser</h1>
 	<form id="addUserForm" action="addUser" method="POST" enctype="multipart/form-data">
-		<table>
+		<table style="display:table; margin:0 auto;" class="">
 			<tr>
-				<td>ID</td><td><input type="text" name="id" id="id" required></td>
-				<td>PW</td><td><input type="password" name="pw" id="pw" required></td>
-				<td>PHOTO</td><td><input type="file" name="photo"></td>
-				<td colspan="2"><button id="addUserBtn" type="button">Join</button></td>
+				<td>ID</td><td><input class="form-control" type="text" name="id" id="id" required></td>
+			</tr>
+			<tr>
+				<td>PW</td><td><input class="form-control" type="password" name="pw" id="pw" required></td>
+			</tr>
+			<tr>
+				<td>PHOTO</td><td><input class="form-control" type="file" name="photo"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button class="btn btn-primary" id="addUserBtn" type="button">Join</button></td>
 			</tr>
 		</table>
 	</form>

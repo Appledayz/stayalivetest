@@ -12,4 +12,8 @@
     FROM user
     WHERE id=#{id} AND pw=#{pw}
   </select>
+  <insert id="addUser" parameterType="com.cafe24.wolfox00.user.vo.User">
+  	INSERT INTO user
+  	VALUES(0,#{id},#{pw},null,now())
+  </insert>
 </mapper>

@@ -32,7 +32,7 @@
 		<c:if test="${S_ID != null}">
 			<a class="btn btn-primary" href="/logout">로그아웃</a>
 		</c:if>
-		<a class="btn btn-primary" href="#">user 추가</a>
+		<a class="btn btn-primary" href="/addUser">user 추가</a>
 		<table class="table">
 			<thead>
 				<tr>

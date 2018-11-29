@@ -26,6 +26,17 @@ public class UserController {
 		System.out.println("date : "+date);
 		return "userList";
 	}
+	@GetMapping("/addUser")
+	public String addUser() {
+		System.out.println("LoginController.addUser GET요청");
+		return "addUser";
+	}
+	@PostMapping("/addUser")
+	public String addUser(User user) {
+		System.out.println("LoginController.addUser POST요청");
+		userService.addUser(user);
+		return "redirect:/userList";
+	}
 	@GetMapping("/login")
 	public String login() {
 		System.out.println("LoginController.login GET요청");

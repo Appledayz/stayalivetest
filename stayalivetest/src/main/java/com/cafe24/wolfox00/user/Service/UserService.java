@@ -21,4 +21,7 @@ public class UserService {
 	public int login(User user) {
 		return userMapper.login(user);
 	}
+	public void addUser(User user) {
+		userMapper.addUser(user);
+	}
 }
