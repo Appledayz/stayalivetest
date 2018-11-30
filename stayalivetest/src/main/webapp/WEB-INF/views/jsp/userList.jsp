@@ -25,7 +25,6 @@
 <body>
 	<h1>userList</h1>
 	<h3 id="sdate">sdate</h3>
-	<h3>get server mil time : ${date}</h3>
 		<c:if test="${S_ID == null}">
 			<a class="btn btn-primary" href="/login">로그인</a>
 		</c:if>
@@ -47,11 +46,11 @@
 				<!-- model안의 sampleList 가져와서 사용 -->
 				<c:forEach var="user" items="${userList}">
 					<tr>
-						<td>${user.no}</td>
-						<td>${user.id}</td>
-						<td>${user.pw}</td>
-						<td>${user.date}</td>
-						<td>${user.photo}</td>
+						<td>${user.userNo}</td>
+						<td>${user.userId}</td>
+						<td>${user.userPw}</td>
+						<td>${user.userDate}</td>
+						<td><img src="${user.userPhoto}"></td>
 					</tr>
 				</c:forEach>
 			</tbody>

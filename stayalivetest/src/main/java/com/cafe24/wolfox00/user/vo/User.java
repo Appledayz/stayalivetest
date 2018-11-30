@@ -1,34 +1,41 @@
 package com.cafe24.wolfox00.user.vo;
 
 public class User {
-	private int no;
-	private String id;
-	private String pw;
-	private String date;
+	private int userNo;
+	private String userId;
+	private String userPw;
+	private String userPhoto;
+	private String userDate;
 	
-	public int getNo() {
-		return no;
+	public String getUserPhoto() {
+		return userPhoto;
 	}
-	public void setNo(int no) {
-		this.no = no;
+	public void setUserPhoto(String userPhoto) {
+		this.userPhoto = userPhoto;
 	}
-	public String getId() {
-		return id;
+	public int getUserNo() {
+		return userNo;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setUserNo(int userNo) {
+		this.userNo = userNo;
 	}
-	public String getPw() {
-		return pw;
+	public String getUserId() {
+		return userId;
 	}
-	public void setPw(String pw) {
-		this.pw = pw;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-	public String getDate() {
-		return date;
+	public String getUserPw() {
+		return userPw;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setUserPw(String userPw) {
+		this.userPw = userPw;
+	}
+	public String getUserDate() {
+		return userDate;
+	}
+	public void setUserDate(String userDate) {
+		this.userDate = userDate;
 	}
 
 }

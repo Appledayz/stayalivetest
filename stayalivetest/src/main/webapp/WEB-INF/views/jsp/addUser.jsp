@@ -25,13 +25,13 @@
 	<form id="addUserForm" action="addUser" method="POST" enctype="multipart/form-data">
 		<table style="display:table; margin:0 auto;" class="">
 			<tr>
-				<td>ID</td><td><input class="form-control" type="text" name="id" id="id" required></td>
+				<td>ID</td><td><input class="form-control" type="text" name="userId" id="id" required></td>
 			</tr>
 			<tr>
-				<td>PW</td><td><input class="form-control" type="password" name="pw" id="pw" required></td>
+				<td>PW</td><td><input class="form-control" type="password" name="userPw" id="pw" required></td>
 			</tr>
 			<tr>
-				<td>PHOTO</td><td><input class="form-control" type="file" name="photo"></td>
+				<td>PHOTO</td><td><input class="form-control" type="file" name="userPhoto"></td>
 			</tr>
 			<tr>
 				<td colspan="2"><button class="btn btn-primary" id="addUserBtn" type="button">Join</button></td>

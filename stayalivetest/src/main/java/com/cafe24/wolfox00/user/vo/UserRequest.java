@@ -3,41 +3,41 @@ package com.cafe24.wolfox00.user.vo;
 import org.springframework.web.multipart.MultipartFile;
 
 public class UserRequest {
-	private int no;
-	private String id;
-	private String pw;
-	private String date;
-	private MultipartFile photo;
+	private int userNo;
+	private String userId;
+	private String userPw;
+	private MultipartFile userPhoto;
+	private String userDate;
 	
-	public int getNo() {
-		return no;
+	public int getUserNo() {
+		return userNo;
 	}
-	public void setNo(int no) {
-		this.no = no;
+	public void setUserNo(int userNo) {
+		this.userNo = userNo;
 	}
-	public String getId() {
-		return id;
+	public String getUserId() {
+		return userId;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-	public String getPw() {
-		return pw;
+	public String getUserPw() {
+		return userPw;
 	}
-	public void setPw(String pw) {
-		this.pw = pw;
+	public void setUserPw(String userPw) {
+		this.userPw = userPw;
 	}
-	public String getDate() {
-		return date;
+	public MultipartFile getUserPhoto() {
+		return userPhoto;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setUserPhoto(MultipartFile userPhoto) {
+		this.userPhoto = userPhoto;
 	}
-	public MultipartFile getPhoto() {
-		return photo;
+	public String getUserDate() {
+		return userDate;
 	}
-	public void setPhoto(MultipartFile photo) {
-		this.photo = photo;
+	public void setUserDate(String userDate) {
+		this.userDate = userDate;
 	}
 	
 }

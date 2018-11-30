@@ -3,17 +3,22 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cafe24.wolfox00.user.Service.UserMapper">
-  <select id="selectUserListAll" resultType="com.cafe24.wolfox00.user.vo.UserRequest">
+  <select id="selectUserListAll" resultType="com.cafe24.wolfox00.user.vo.User">
   	SELECT *
   	FROM user
   </select>
   <select id="login" resultType="int">
     SELECT COUNT(*)
     FROM user
-    WHERE id=#{id} AND pw=#{pw}
+    WHERE user_id=#{id} AND user_pw=#{pw}
   </select>
   <insert id="addUser" parameterType="com.cafe24.wolfox00.user.vo.User">
   	INSERT INTO user
-  	VALUES(0,#{id},#{pw},null,now())
+  	VALUES(0,#{userId},#{userPw},null,now())
   </insert>
+  <update id="addUserPhoto" parameterType="com.cafe24.wolfox00.user.vo.User">
+  	UPDATE user
+  	SET user_photo = #{userPhoto}
+  	WHERE user_id=#{userId}
+  </update>
 </mapper>

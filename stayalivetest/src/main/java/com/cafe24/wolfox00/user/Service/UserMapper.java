@@ -9,7 +9,8 @@ import com.cafe24.wolfox00.user.vo.UserRequest;
 
 @Mapper
 public interface UserMapper {
-	List<UserRequest> selectUserListAll();
+	List<User> selectUserListAll();
 	int login(User user);
-	void addUser(User user);
+	void addUser(UserRequest userRequest);
+	void addUserPhoto(User User);
 }
